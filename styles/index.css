@@ -1,11 +1,15 @@
 header {
-    position: relative;
+    display: flex;
     height: 100px;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 body {
     margin-left: 15%;
     margin-right: 15%;
+    flex: 1;
 }
 
 h1 {
@@ -23,11 +27,8 @@ p {
 }
 
 .logo-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    flex: 1;
     width: 33%;
-    display: inline-block;
     height: 100%;
 }
 
@@ -37,10 +38,8 @@ p {
 }
 
 .author-container {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: inline-block;
+    flex: 1;
+    margin-top: auto;
 }
 
 .name {
@@ -55,26 +54,29 @@ p {
 
 .main {
     height: 66%;
+    display: flex;
+}
+
+.main-img {
+    flex: 1;
 }
 
 .secondary {
     height: 34%;
     display: flex;
     padding: 5px;
-    flex-wrap: wrap;
 }
 
 .featured {
     width: 30%;
     height: 100%;
-    margin: auto;
+    margin: 5px;
+    padding: 5px;
     text-align: center;
+    flex: 1;
 }
 
-.featured-img {
-    height: 50%;
-}
-
+.featured-img,
 .featured-text {
-    height: 50%
+    height: 50%;
 }
